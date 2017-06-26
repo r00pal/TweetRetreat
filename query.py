@@ -1,10 +1,10 @@
 import MySQLdb 
 import datetime
 
-HOST = "localhost"
-USER = "root"
-PASSWD = "roopal"
-DATABASE = "hackathon"
+HOST = ""
+USER = ""
+PASSWD = ""
+DATABASE = ""
 
 def fetch_query(tweet_id):
     db = MySQLdb.connect(host=HOST, user=USER, passwd=PASSWD, db=DATABASE, charset="utf8")
