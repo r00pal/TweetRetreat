@@ -14,10 +14,10 @@ import MySQLdb
 
 import query
 
-consumer_key = 'OoDlic06gNPoweQZJ7YnO64F9'
-consumer_secret = 'Cwr94rh8adYxKPTPLGp7DPERgGYm6t5nvpppQmAmCdxEx6vTA5'
-access_token = '834249929128341505-NYcDFhQ8nqRITmczp4IhZgyIcbElPWR'
-access_token_secret = 'dCXXBspFY83oUMt0X2jeRFlwOyB82ejC4F7QiaAYTbxd3'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 HOST = "localhost"
 USER = "root"
@@ -44,7 +44,7 @@ api = tweepy.API(auth)
 # s = u'Product: TurboTax\nTweet ID: 875434851721252865\nUser Handle: SkyeShepard\nSeverity Level: 1Text: RT @JJDJ1187: Gregg Jarrett: Trump should demand Mueller quit as special counsel <https://t.co/dzNLeqrZkz> via the @FoxNews Android app'
 # str = s.splitlines()[0]
 # print str.split(':')[1]
-token = 'xoxp-86879456164-197794379475-198675153702-381ef567806dcc55be7283d27f1322cc'  # found at https://api.slack.com/web#authentication
+token = ''  # found at https://api.slack.com/web#authentication
 sc = SlackClient(token)
 if sc.rtm_connect():  # connect to a Slack RTM websocket
     while True:
