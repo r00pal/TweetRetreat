@@ -13,15 +13,15 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 
 #Variables that contains the user credentials to access Twitter API
-consumer_key = 'OoDlic06gNPoweQZJ7YnO64F9'
-consumer_secret = 'Cwr94rh8adYxKPTPLGp7DPERgGYm6t5nvpppQmAmCdxEx6vTA5'
-access_token = '834249929128341505-NYcDFhQ8nqRITmczp4IhZgyIcbElPWR'
-access_token_secret = 'dCXXBspFY83oUMt0X2jeRFlwOyB82ejC4F7QiaAYTbxd3'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
-HOST = "localhost"
-USER = "root"
-PASSWD = "roopal"
-DATABASE = "hackathon"
+HOST = ""
+USER = ""
+PASSWD = ""
+DATABASE = ""
 
 POSITIVE = 0
 NEGATIVE = 0
@@ -52,7 +52,7 @@ def getSeverity(x):
     return "-1"
 
 #set slack credentials
-slack = Slacker('xoxp-86879456164-197794379475-198675153702-381ef567806dcc55be7283d27f1322cc')
+slack = Slacker('')
 def sendToSlack(product, tweet_id, parent_id, screen_name, score, text):
     msg = "Product: "+product+"\n"
     print (msg)
